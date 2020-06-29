@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=macOS
+Comment=A macOS theme based on the latest macOS version
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=macOS
+MetacityTheme=macOS
+IconTheme=La Capitaine
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:
