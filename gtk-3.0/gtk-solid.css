@@ -1554,14 +1554,16 @@ headerbar {
     background-image: none;
     background-color: #E4E4E4;
     border-color: shade(#E4E4E4, 0.9); }
-  headerbar:first-child {
-    border-radius: 0px;
-    border-top-left-radius: 4px; }
-  headerbar:last-child {
-    border-radius: 0px;
-    border-top-right-radius: 4px; }
   .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
     border-radius: 0; }
+  separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
+    border-top-left-radius: 4px; }
+    .maximized separator:first-child + headerbar, .tiled separator:first-child + headerbar, .maximized separator:first-child + headerbar:backdrop, .tiled separator:first-child + headerbar:backdrop, .maximized headerbar:first-child, .tiled headerbar:first-child, .maximized headerbar:first-child:backdrop, .tiled headerbar:first-child:backdrop {
+      border-radius: 0; }
+  headerbar:last-child, headerbar:last-child:backdrop {
+    border-top-right-radius: 4px; }
+    .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
+      border-radius: 0; }
   headerbar .title {
     padding-left: 12px;
     padding-right: 12px;
