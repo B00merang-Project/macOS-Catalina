@@ -1887,16 +1887,16 @@ StScrollBar {
 		-natural-hpadding: 12px;
 		-minimum-hpadding: 6px;
 		font-weight: normal;
-		color: black;
+		color: white;
 		transition-duration: 100ms;
 		padding-left: .3em;
 		padding-right: .3em; }
 		#LookingGlassDialog .notebook-tab:hover {
-			color: black; }
+			color: white; }
 		#LookingGlassDialog .notebook-tab:selected {
-			border-bottom-width: 2px;
-			border-color:#026ec4;
-			color: black; }
+			background-color:#026ec4;
+			box-shadow: none !important;
+			color: white; }
 	#LookingGlassDialog StBoxLayout#EvalBox {
 		padding: 4px;
 		spacing: 4px; }
