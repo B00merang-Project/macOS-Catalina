@@ -2695,6 +2695,8 @@ panel-toplevel.background na-tray-applet {
       box-shadow: none;
       background-image: none;
       background-color: #0375F8; }
+    .mate-panel-menu-bar #tasklist-button label {
+      color: #FFFFFF; }
   .mate-panel-menu-bar PanelSeparator {
     color: #acacac;
     padding-top: 4px;
@@ -2811,10 +2813,12 @@ panel-toplevel.background na-tray-applet {
       background-image: none;
       background-color: #E4E4E4; }
 
-wnck-pager:hover {
-  background-color: #0375F8; }
-wnck-pager:selected {
-  background-color: #1068cd; }
+wnck-pager {
+  background-color: #F5F5F5; }
+  wnck-pager:hover {
+    background-color: #0375F8; }
+  wnck-pager:selected {
+    background-color: #1068cd; }
 
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
