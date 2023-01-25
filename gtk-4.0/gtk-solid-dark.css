@@ -1936,7 +1936,6 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
     border: none; }
 
 calendar {
-  padding: 2px;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -1944,17 +1943,32 @@ calendar {
   color: #FFFFFF; }
   calendar.header {
     border: none;
-    color: #0375F8; }
+    border-bottom: 1px solid #3a3a3a;
+    color: #FFFFFF; }
   calendar.button {
-    color: #0375F8; }
+    color: rgba(255, 255, 255, 0.45); }
+    calendar.button:hover {
+      color: #FFFFFF; }
+    calendar.button:backdrop {
+      color: rgba(140, 140, 140, 0.45); }
+    calendar.button:disabled {
+      color: rgba(157, 157, 157, 0.45); }
   calendar:selected {
-    border-radius: 0;
+    border-radius: 5px;
     color: #FFFFFF;
     background-color: #0375F8; }
+    calendar:selected:backdrop {
+      color: #8b8b8b;
+      background-color: #6d6d6d; }
   calendar:indeterminate {
-    color: alpha(currentColor, 0.55); }
+    color: alpha(currentColor, 0.1); }
   calendar.highlight {
-    color: #0375F8; }
+    color: #9d9d9d; }
+    calendar.highlight:backdrop {
+      color: #6c6c6c; }
+  calendar:backdrop {
+    color: #AEAEAE;
+    border-color: #4c4c4c; }
 
 messagedialog {
   border-bottom-left-radius: 4px;
