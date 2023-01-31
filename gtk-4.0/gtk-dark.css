@@ -84,16 +84,17 @@ label > selection {
   color: #FFFFFF;
   background-color: #3D6C94; }
   label > selection:focus-within {
-    color: #3D6C94; }
+    color: #FFFFFF;
+    background-color: #3D6C94; }
 
 label:disabled {
   color: #9d9d9d; }
   button label:disabled {
     color: inherit; }
   > selection label:disabled {
-    color: #5089cb; }
+    color: #6d8599; }
     > selection label:disabled:backdrop {
-      color: #6d6d6d; }
+      color: #556c80; }
 
 label.error {
   color: #CC0000; }
@@ -657,7 +658,7 @@ searchbar {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #353535;
-  background-color: #3B3B3B; }
+  background-color: #383838; }
 
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
@@ -1081,21 +1082,20 @@ menubar, .menubar {
   menubar:backdrop, .menubar:backdrop {
     color: #8C8C8C;
     background-color: #545454; }
-
-menubar > menuitem, .menubar > menuitem {
-  padding: 3px 5px;
-  border: none;
-  color: #FFFFFF;
-  background-color: transparent; }
-  menubar > menuitem:hover, .menubar > menuitem:hover {
+  menubar > menuitem, .menubar > menuitem {
+    padding: 3px 5px;
+    border: none;
     color: #FFFFFF;
-    background-color: #0375F8; }
-  menubar > menuitem:disabled, .menubar > menuitem:disabled {
-    color: #9d9d9d;
     background-color: transparent; }
-  menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
-    color: #8C8C8C;
-    background-color: transparent; }
+    menubar > menuitem:hover, .menubar > menuitem:hover {
+      color: #FFFFFF;
+      background-color: #0375F8; }
+    menubar > menuitem:disabled, .menubar > menuitem:disabled {
+      color: #9d9d9d;
+      background-color: transparent; }
+    menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+      color: #8C8C8C;
+      background-color: transparent; }
 
 notebook {
   padding: 0; }
@@ -1606,8 +1606,7 @@ window.dialog.print drawing {
 window.dialog.print .dialog-action-box {
   margin: 12px; }
 
-frame,
-.frame {
+frame, .frame {
   border: 1px solid #353535; }
 
 frame {
