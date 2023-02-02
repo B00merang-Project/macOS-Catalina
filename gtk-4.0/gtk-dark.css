@@ -3,7 +3,7 @@
   background-color: rgba(59, 59, 59, 0.999); }
   .background:backdrop {
     color: #8C8C8C;
-    background-color: #545454; }
+    background-color: rgba(84, 84, 84, 0.999); }
 
 dnd {
   color: #FFFFFF; }
@@ -571,6 +571,37 @@ button.suggested-action {
     color: #8b8b8b;
     background-image: linear-gradient(to bottom, #2e8fff, #097bff); }
 
+modelbutton.flat {
+  min-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+  modelbutton.flat:hover {
+    color: #FFFFFF;
+    background-color: #0375F8; }
+  modelbutton.flat:selected {
+    color: #FFFFFF;
+    background-color: #0375F8; }
+  modelbutton.flat:disabled {
+    color: #9d9d9d; }
+  modelbutton.flat > image {
+    padding-right: 4px; }
+  modelbutton.flat arrow {
+    background: none;
+    min-width: 16px;
+    min-height: 16px;
+    opacity: 0.3; }
+    modelbutton.flat arrow:hover {
+      background: none; }
+    modelbutton.flat arrow.left {
+      -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
+    modelbutton.flat arrow.right {
+      -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
+
 button.link,
 link {
   color: #0057D8;
@@ -1023,71 +1054,28 @@ treeview entry, treeview entry.flat {
   treeview entry:focus, treeview entry.flat:focus {
     border-color: #0375F8; }
 
-popover, popover.background {
+popover.background {
   padding: 2px;
-  border-color: #353535;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-clip: border-box;
   background-color: #3B3B3B;
-  box-shadow: none; }
-  .csd popover, popover, .csd popover.background, popover.background {
-    border: 1px solid #353535; }
-  popover > list, popover > .view, popover > iconview, popover > toolbar, popover > .inline-toolbar, popover.background > list, popover.background > .view, popover.background > iconview, popover.background > toolbar, popover.background > .inline-toolbar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  .csd popover.background, popover.background {
+    border: 1px solid #353535;
+    border-radius: 4px; }
+    .csd popover.background:backdrop, popover.background:backdrop {
+      border-color: #4c4c4c; }
+  popover.background:backdrop {
+    background-color: #545454;
+    box-shadow: none; }
+  popover.background > list, popover.background > .view, popover.background > iconview, popover.background > toolbar, popover.background > .inline-toolbar {
     border-style: none;
     background-color: transparent; }
-  popover checkbutton:selected, popover radiobutton:selected, popover.background checkbutton:selected, popover.background radiobutton:selected {
-    color: #FFFFFF;
-    background-color: #0375F8; }
-
-popover.osd {
-  box-shadow: none; }
-  popover.osd > toolbar button {
-    border-width: 0;
-    border-radius: 0;
-    background-color: transparent; }
-
-popover:backdrop {
-  border-color: #4c4c4c;
-  color: #8C8C8C;
-  background-color: #545454;
-  box-shadow: none; }
+  popover.background separator {
+    margin: 3px; }
+  popover.background list separator {
+    margin: 0px; }
 
 magnifier {
   background-color: #1D1E22; }
-
-modelbutton.flat {
-  min-height: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: none;
-  border-radius: 0px;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none; }
-  modelbutton.flat:hover {
-    color: #FFFFFF;
-    background-color: #0375F8; }
-  modelbutton.flat:selected {
-    color: #FFFFFF;
-    background-color: #0375F8; }
-  modelbutton.flat:disabled {
-    color: #9d9d9d; }
-  modelbutton.flat > image {
-    padding-right: 4px; }
-  modelbutton.flat arrow {
-    background: none;
-    min-width: 16px;
-    min-height: 16px;
-    opacity: 0.3; }
-    modelbutton.flat arrow:hover {
-      background: none; }
-    modelbutton.flat arrow.left {
-      -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
-    modelbutton.flat arrow.right {
-      -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
 
 .background.popup {
   background-color: transparent; }
@@ -1788,6 +1776,20 @@ list {
         background-color: #6d6d6d; }
   list separator, list separator:backdrop {
     background: none; }
+
+columnview > listview > row {
+  padding: 0; }
+  columnview > listview > row > cell {
+    padding: 8px 6px; }
+    columnview > listview > row > cell:not(:first-child) {
+      border-left: 1px solid transparent; }
+
+columnview.column-separators > listview > row > cell {
+  border-left-color: #353535; }
+
+columnview.data-table > listview > row > cell {
+  padding-top: 2px;
+  padding-bottom: 2px; }
 
 treeexpander {
   border-spacing: 4px; }
