@@ -10,9 +10,9 @@ Theme reproducing the clean and bright look of Apple's last iteration of macOS 1
 - Any GTK-based desktop
 - Cinnamon
 - Gnome
+- LXDE/Openbox
 - MATE
 - Xfce
-- LXDE/Openbox
 
 ### Manual installation
 Go to releases, download the latest `.zip` file and extract it to the themes directory i.e. `/home/USERNAME/.themes`
