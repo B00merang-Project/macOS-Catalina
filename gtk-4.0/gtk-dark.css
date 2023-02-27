@@ -454,16 +454,15 @@ editablelabel > stack > text > selection {
 
 button {
   padding: 4px 8px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 4px;
-  color: #FFFFFF;
-  border-color: #353535;
+  border: 1px solid #353535;
   border-top-color: #3a3a3a;
   border-left-color: #383838;
   border-right-color: #383838;
+  color: #FFFFFF;
   background-color: #1D1E22;
-  background-image: linear-gradient(to bottom, #1D1E22, #1c1d21); }
+  background-image: linear-gradient(to bottom, #1D1E22, #1c1d21);
+  box-shadow: none; }
   button:hover {
     color: #FFFFFF;
     background-color: #202126; }
@@ -499,7 +498,8 @@ button {
     border-radius: 4px;
     color: #FFFFFF;
     background-color: transparent;
-    background-image: none; }
+    background-image: none;
+    box-shadow: none; }
     button.flat:hover {
       border-color: #353535;
       border-top-color: #3a3a3a;
@@ -531,10 +531,8 @@ button {
       color: #8C8C8C; }
 
 button.destructive-action {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d63333;
   border-radius: 4px;
+  border: 1px solid #d63333;
   color: #fae6e6;
   background-image: none;
   background-color: #CC0000; }
@@ -550,10 +548,8 @@ button.destructive-action {
     background-color: #a81919; }
 
 button.suggested-action {
-  border-width: 1px;
-  border-style: solid;
   border-radius: 4px;
-  border-color: #0375F8;
+  border: 1px solid #0375F8;
   color: #FFFFFF;
   background-image: linear-gradient(to bottom, #3b96ff, #1582ff); }
   button.suggested-action:active, button.suggested-action:checked {
@@ -714,7 +710,8 @@ toolbar {
     border-radius: 4px;
     color: #FFFFFF;
     background-color: transparent;
-    background-image: none; }
+    background-image: none;
+    box-shadow: none; }
     toolbar button.flat:hover {
       border-color: #353535;
       border-top-color: #3a3a3a;
@@ -869,16 +866,15 @@ headerbar {
     color: alpha(currentColor, 0.7); }
   headerbar button {
     padding: 4px 8px;
-    border-style: solid;
-    border-width: 1px;
     border-radius: 4px;
-    color: #FFFFFF;
-    border-color: #353535;
+    border: 1px solid #353535;
     border-top-color: #3a3a3a;
     border-left-color: #383838;
     border-right-color: #383838;
+    color: #FFFFFF;
     background-color: #1D1E22;
-    background-image: linear-gradient(to bottom, #1D1E22, #1c1d21); }
+    background-image: linear-gradient(to bottom, #1D1E22, #1c1d21);
+    box-shadow: none; }
     headerbar button:hover {
       color: #FFFFFF;
       background-color: #202126; }
@@ -2513,7 +2509,8 @@ menubutton arrow {
   border-radius: 4px;
   color: #FFFFFF;
   background-color: transparent;
-  background-image: none; }
+  background-image: none;
+  box-shadow: none; }
   .toolbar > button:hover,
   .toolbar > :not(.linked) > button:hover,
   .toolbar :not(.linked) > menubutton > button:hover,
